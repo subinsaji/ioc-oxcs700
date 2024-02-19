@@ -36,7 +36,7 @@ COPY ibek-support/sscan/ sscan/
 RUN sscan/install.sh R2-11-6
 
 COPY ibek-support/calc/ calc/
-RUN calc/install.sh R-3-7-5
+RUN calc/install.sh R3-7-5
 
 COPY ibek-support/oxcs700/ oxcs700/
 RUN oxcs700/install.sh 2024.2.2
