@@ -39,7 +39,7 @@ COPY ibek-support/calc/ calc/
 RUN calc/install.sh R3-7-5
 
 COPY ibek-support/oxcs700/ oxcs700/
-RUN oxcs700/install.sh 2-22b1
+RUN oxcs700/install.sh 2-22
 
 ################################################################################
 
