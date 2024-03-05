@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=/tmp/ioc.schema.json
+
+ioc_name: bl01c-di-dcam-01
+description: camera for diagnostic 1
+
+entities:
+  - type: epics.EpicsCaMaxArrayBytes
+    max_bytes: 6000000
+
+  - type: devIocStats.iocAdminSoft
+    IOC: bl01c-di-dcam-01
+
+  - type: asyn.AsynSerial
+    name: ty_60_2
+    port: /ty/60/2
+    priority: 0
+    input_eos: ""
+    output_eos: ""
+    baud: 9600
+    parity: none
+    noAutoConnect: false
+    bits: "8"
+    stop: "1"
+    crtscts: "N"
+    noProcessEos: false
+    disconnectOnReadTimeout: "N"
+    simulation: "N"
+
+  - type: OXCS700.OXCS700
+    P: BL03I-EA-CSTRM-01
+    Q: CAM
+    PORT: ty_60_2
+    name: CRYOSTRM01
+    DISABLE_COMMS: 0
