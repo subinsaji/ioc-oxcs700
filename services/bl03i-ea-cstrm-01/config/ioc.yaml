@@ -10,6 +10,9 @@ entities:
   - type: devIocStats.iocAdminSoft
     IOC: bl01c-di-dcam-01
 
+  # this asyn serial connection is for a VXWorks IOC - To make this IOC instance
+  # work you would need to plug a cryostream into a Terminal Server and then
+  # replace this asyn.Serial with an asyn.AsynIP
   - type: asyn.AsynSerial
     name: ty_60_2
     port: /ty/60/2
