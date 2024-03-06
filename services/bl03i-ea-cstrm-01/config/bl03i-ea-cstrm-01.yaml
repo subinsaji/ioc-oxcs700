@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=/tmp/ioc.schema.json
 
-ioc_name: bl01c-di-dcam-01
-description: camera for diagnostic 1
+ioc_name: bl03i-ea-cstrm-01
+description: Oxford cryostream device
 
 entities:
   - type: epics.EpicsCaMaxArrayBytes
     max_bytes: 6000000
 
   - type: devIocStats.iocAdminSoft
-    IOC: bl01c-di-dcam-01
+    IOC: bl03i-ea-cstrm-01
 
   # this asyn serial connection is for a VXWorks IOC - To make this IOC instance
   # work you would need to plug a cryostream into a Terminal Server and then
