@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=/tmp/ioc.schema.json
+# yaml-language-server: $schema=/tmp/ibek.ioc.schema.json
 
 ioc_name: bl03i-ea-cstrm-01
 description: Oxford cryostream device
